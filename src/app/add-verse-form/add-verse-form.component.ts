@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { FormControl } from '@angular/forms';
+import { FormControl, FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { addVerses } from '../data-model'; // importa los versos
 
 @Component({
   selector: 'app-add-verse-form',
@@ -8,11 +9,30 @@ import { FormControl } from '@angular/forms';
 })
 export class AddVerseFormComponent implements OnInit {
 
-  name = new FormControl();
+  addVerseForm: FormGroup;
 
-  constructor() { }
+  // verse = new FormControl();
+  // name = new FormControl();
+
+  constructor(private fb:FormBuilder) {
+    this.createForm();
+   }
 
   ngOnInit() {
   }
 
+  createForm() {
+    this.addVerseForm = this.fb.group({
+      name : '',
+      firstVerse : ''
+    });
+    // this.addVerseForm = this.fb.group({
+    //   name : ['', Validators.required],
+    //   firstVerse : ['', Validators.required]
+    // });
+    // this.addVerseForm = this.fb.group({
+    //   name : addVerses[0].name,
+    //   verse : addVerses[0].verse,
+    // });
+  }
 }

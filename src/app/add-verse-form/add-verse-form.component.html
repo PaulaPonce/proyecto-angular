@@ -1,5 +1,28 @@
-<form class="example-container">
+<!-- <form class="example-container" [formGroup]="addVerseForm">
   <mat-form-field>
     <input matInput placeholder="Add a verse!" class="form-control" [formControl]="name">
   </mat-form-field>
+</form> -->
+
+<h2>Versos</h2>
+
+<form [formGroup]="addVerseForm">
+  <mat-form-field>
+    <input matInput placeholder="Nombre" formControlName="name">
+  </mat-form-field>
+  <mat-form-field>
+    <input matInput placeholder="Verso" formControlName="firstVerse">
+  </mat-form-field>
+  <button mat-button color="primary">AGREGAR VERSO</button>
 </form>
+<div class="button-row">
+
+</div>
+
+
+<p>{{addVerseForm.value | json}}</p> <!-- muestra el valor de los inputs-->
+<p>{{addVerseForm.status | json}}</p> <!-- validador -->
+<p>{{addVerseForm.get("name").value}}</p>
+<p>{{addVerseForm.get("firstVerse").value}}</p>
+<p>{{addVerseForm.get("name").status}}</p>
+<p>{{addVerseForm.get("firstVerse").status}}</p>
