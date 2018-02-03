@@ -5,7 +5,7 @@ import { addVerses } from '../data-model'; // importa los versos
 @Component({
   selector: 'app-add-verse-form',
   templateUrl: './add-verse-form.component.html',
-  styleUrls: ['./add-verse-form.component.css']
+  styleUrls: ['./add-verse-form.component.scss']
 })
 export class AddVerseFormComponent implements OnInit {
 
@@ -32,7 +32,7 @@ export class AddVerseFormComponent implements OnInit {
     // });
     // this.addVerseForm = this.fb.group({
     //   name : addVerses[0].name,
-    //   verse : addVerses[0].verse,
+    //   verse : addVerses[0].firstVerse,
     // });
   }
 }

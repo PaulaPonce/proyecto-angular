@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-verse-list',
   templateUrl: './verse-list.component.html',
-  styleUrls: ['./verse-list.component.css']
+  styleUrls: ['./verse-list.component.scss']
 })
 export class VerseListComponent implements OnInit {
 
