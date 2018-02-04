@@ -1,2 +1,11 @@
 @import '../../sass/_variables.scss';
 @import '../../sass/_mixins.scss';
+
+/deep/.mat-form-field {
+  &-flex {
+    border-bottom: 2px solid $color-main;
+  }
+  &-label {
+    color: $color-main;
+  }
+}
