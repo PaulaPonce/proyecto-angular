@@ -1,0 +1,25 @@
+@mixin nav-anchor {
+  padding: 0 10px;
+  border-radius: 5px;
+}
+
+@mixin verse-list {
+  div {
+    margin: {
+      top:50px !important;
+      bottom: 100px !important;
+    }
+  }
+
+  h3 {
+    font-size: 1.2em;
+    color: $color-secondary;
+  }
+
+  li {
+    list-style-type: none;
+    font-size: 1em;
+    color: $color-secondary;
+  }
+
+}

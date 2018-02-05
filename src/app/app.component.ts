@@ -4,7 +4,7 @@ import { AuthService } from './auth.service';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.scss']
 })
 
 export class AppComponent {
@@ -13,25 +13,26 @@ export class AppComponent {
   /**
    * Variables login
    */
-  email: string;
-  password: string;
+  // email: string;
+  // password: string;
 
-  constructor(public authService: AuthService) { }
-  /**
-   * Métodos a ocupar en html del componente principal que corresponden a los métodos del auth service
-   * se inyecta el servicio en el constructor del componente
-   */
-  signup() {
-    this.authService.signup(this.email, this.password);
-    this.email = this.password = ''; // limpiar campos
-  }
+  // constructor(public authService: AuthService) { }
 
-  login() {
-    this.authService.login(this.email, this.password);
-    this.email = this.password = '';
-  }
+  // /**
+  //  * Métodos a ocupar en html del componente principal que corresponden a los métodos del auth service
+  //  * se inyecta el servicio en el constructor del componente
+  //  */
+  // signup() {
+  //   this.authService.signup(this.email, this.password);
+  //   this.email = this.password = ''; // limpiar campos
+  // }
 
-  logout() {
-    this.authService.logout();
-  }
+  // login() {
+  //   this.authService.login(this.email, this.password);
+  //   this.email = this.password = '';
+  // }
+
+  // logout() {
+  //   this.authService.logout();
+  // }
 }

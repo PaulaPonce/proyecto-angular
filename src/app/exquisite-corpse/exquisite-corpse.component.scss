@@ -1,0 +1,27 @@
+@import '../../sass/_variables.scss';
+@import '../../sass/_mixins.scss';
+
+.container {
+  margin: {
+    top: 80px !important;
+    bottom: 50px !important;
+  }
+}
+
+h1 {
+  font-size: 2em;
+  color: $color-secondary;
+}
+
+h2 {
+  color: $color-alt;
+}
+
+p {
+  font-size: 1.1em;
+  color: $color-secondary;
+}
+
+mat-divider {
+  border-bottom: 1px solid $color-light;
+}

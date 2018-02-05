@@ -14,7 +14,7 @@ export class AddVerseFormComponent implements OnInit {
   // verse = new FormControl();
   // name = new FormControl();
 
-  constructor(private fb:FormBuilder) {
+  constructor(private fb: FormBuilder) {
     this.createForm();
    }
 

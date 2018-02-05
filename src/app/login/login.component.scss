@@ -1,0 +1,14 @@
+@import '../../sass/_variables.scss';
+@import '../../sass/_mixins.scss';
+
+.login-card {
+  max-width: 50%;
+  margin: 0 auto;
+}
+
+.add-verse {
+  margin: {
+    top: 50px !important;
+    bottom: 70px !important;
+  }
+}

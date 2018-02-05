@@ -7,11 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class VerseListComponent implements OnInit {
 
-  title = 'Versos';
-  verses = ['En la tierra seremos reinas',
-    'y de verídico reinar',
-    'y siendo grandes nuestros reinos',
-    'llegaremos todas al mar'];
+  title = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.';
+  verses = [
+    'Morbi varius lectus eget sollicitudin vulputate',
+    'Nunc a turpis accumsan, feugiat turpis eu, lobortis ipsum.',
+    'Nunc in ex efficitur, accumsan augue vitae, auctor odio.',
+    'Proin varius sem faucibus, consectetur mi in, commodo urna.',
+    'Vivamus nec tellus nec libero viverra consectetur.',
+    'Nulla posuere elit sit amet risus convallis, ut tincidunt ligula lacinia.',
+    'Curabitur bibendum lectus ac dolor maximus, pulvinar aliquet metus mattis.',
+    'Ut id leo laoreet, viverra lorem id, aliquet ante.'
+  ];
 
   constructor() { }
 

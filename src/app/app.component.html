@@ -1,7 +1,7 @@
 <header>
   <mat-toolbar color="primary" role="header">
     <mat-toolbar-row>
-      <span>Exquisite Corpse</span>
+      <span><a routerLink="/exquisite-corpse" routerLinkActive="active">EXQUISITE CORPSE</a></span>
     </mat-toolbar-row>
     <!-- <mat-toolbar-row>
       <input type="email" placeholder="Email" [(ngModel)]="email" placeholder="email">
@@ -11,22 +11,24 @@
       <button mat-button color="basic" (click)="login()" [disabled]="!email || !password">Login</button>
       <button mat-button color="basic" (click)="logout()">Logout</button>
     </mat-toolbar-row> -->
+    <mat-toolbar-row class="navigation">
+      <div>
+        <a class="nav-anchor" routerLink="/poem1" routerLinkActive="active">Poem 1</a>
+        <a class="nav-anchor" routerLink="/poem2" routerLinkActive="active">Poem 2</a>
+      </div>
+      <div class="play-link">
+        <a class="nav-anchor" routerLink="/play" routerLinkActive="active">PLAY</a>
+      </div>
+    </mat-toolbar-row>
   </mat-toolbar>
 </header>
 
-<section style="text-align:center">
-  <h1>Start building an Exquisite Corpse</h1>
-  <h2><i>« Le cadavre - exquis - boira - le vin - nouveau »</i></h2>
-  <p><b>Exquisite corpse</b>, also known as exquisite cadaver (from the original French term cadavre exquis) or rotating corpse, is a method by which a collection of words or images is collectively assembled.</p>
-  <p>You can build your own Exquisite Corpse adding verses to a composition in sequence.</p>
-</section>
+<router-outlet>
+  <!-- Routed views -->
+</router-outlet>
 
-<!-- <section>
-  <app-verse-list></app-verse-list>
-</section> -->
-
-<section>
-  <mat-card class="example-card">
+<!-- <section class="container">
+  <mat-card class="login-card">
     <mat-card-header>
       <mat-card-title>Log in to start playing</mat-card-title>
     </mat-card-header>
@@ -42,9 +44,9 @@
   </mat-card>
 </section>
 
-<section>
+<section class="container">
   <h3 *ngIf="authService.user | async">Welcome {{ (authService.user | async)?.email }}!</h3>
   <div *ngIf="authService.user | async">
     <app-add-verse-form></app-add-verse-form>
   </div>
-</section>
+</section> -->
